@@ -1,0 +1,26 @@
+/* src/layouts/Navbar/Navbar.scss */
+
+/* @import "../../styles/variables"; */
+
+/* using BEM */
+.navbar {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &__content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    padding: 8px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    border-radius: 5px;
+  }
+}
