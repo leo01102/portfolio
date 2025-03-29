@@ -1,6 +1,12 @@
 /* src/components/Contact/Contact.tsx */
 
-import React, { useState, FormEvent, ChangeEvent, useRef } from "react";
+import React, {
+  useState,
+  FormEvent,
+  ChangeEvent,
+  useRef,
+  useEffect,
+} from "react";
 import { Mail, Linkedin, Github, Download } from "lucide-react";
 import emailjs from "@emailjs/browser";
 import "./Contact.scss";
@@ -25,6 +31,11 @@ const Contact: React.FC = () => {
 
   const formRef = useRef<HTMLFormElement>(null);
 
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY");
+  }, []);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -43,11 +54,11 @@ const Contact: React.FC = () => {
     try {
       // EmailJS service
       const serviceId =
-        process.env.REACT_APP_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+        process.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
       const templateId =
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+        process.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
       const publicKey =
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+        process.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
 
       if (!formRef.current) return;
 
