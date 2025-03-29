@@ -50,15 +50,14 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus(null);
-
     try {
       // EmailJS service
       const serviceId =
-        process.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
       const templateId =
-        process.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
       const publicKey =
-        process.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
 
       if (!formRef.current) return;
 
