@@ -1,8 +1,8 @@
 /* src/lib/translations/index.ts */
 
 import { Language } from "@/lib/contexts/LanguageContext";
-import { en } from "./en";
-import { es } from "./es";
+import { en } from "./en/en";
+import { es } from "./es/es";
 import { Translations } from "./types";
 
 // Export translations object

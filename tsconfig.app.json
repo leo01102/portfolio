@@ -13,7 +13,8 @@
       "@components/*": ["src/components/*"],
       "@contexts/*": ["src/lib/contexts/*"],
       "@styles/*": ["src/styles/*"],
-      "@lib/*": ["src/lib/*"]
+      "@lib/*": ["src/lib/*"],
+      "@translations/*": ["src/lib/translations/*"]
     },
 
     /* Bundler mode */

@@ -2,25 +2,157 @@
 
 /* @import "../../styles/variables"; */
 
-/* using BEM */
 .navbar {
-  background-color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.001);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: var(--text-color);
+  width: 100%;
+  height: 64px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   transition: background-color 0.3s ease, color 0.3s ease;
+  align-items: center;
+  justify-content: center;
 
-  &__content {
-    padding: 10px;
+  &__container {
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 24px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__main {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    padding: 8px 0;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--primary-color);
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  /* Configurations for desktop and mobile */
+  &__config {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    right: 24px;
+
+    /* Desktop version (default, shown above 768px) */
+    &.desktop {
+      display: flex;
+    }
+
+    /* Mobile version (hidden by default) */
+    &.mobile {
+      display: none;
+    }
   }
 
   &__button {
-    padding: 8px;
-    cursor: pointer;
     background: transparent;
     border: none;
     color: var(--text-color);
-    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__dropdown-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 8px;
+    justify-content: center;
+  }
+
+  /* Dropdown menu for mobile */
+  .navbar__dropdown {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background: var(--dropdown-bg, rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 101;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    &__container {
+      padding: 0 16px;
+    }
+    &__main {
+      gap: 20px;
+    }
+    &__config {
+      right: 16px;
+
+      &.desktop {
+        display: none;
+      }
+      &.mobile {
+        display: flex;
+        position: relative;
+      }
+    }
+    /* Adjust icon sizes for mobile */
+    .navbar__config.mobile {
+      .navbar__button svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    &__main {
+      gap: 14px;
+    }
+    &__link {
+      font-size: 14px;
+    }
   }
 }

@@ -24,22 +24,52 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--text-color);
-  background-color: var(--background-color);
   transition: background-color 0.3s ease, color 0.3s ease;
   margin: 0;
-  display: flex;
-  place-items: center;
-  align-items: center;
+  padding: 0;
+  width: 100%;
   min-width: 320px;
   min-height: 100vh;
+
+  /* Set the base background color */
+  background-color: var(--background-color-main);
+
+  /* Apply a default gradient; it will be overridden by theme-specific ones */
+  background-image: var(--gradient-light);
+  background-repeat: no-repeat;
+}
+
+/* Light theme background */
+html:not(.dark) body {
+  background-image: var(--gradient-light);
+  background-repeat: no-repeat;
+}
+
+/* Dark theme background: two radial gradients positioned like the original */
+html.dark body {
+  background-image: var(--gradient-dark);
+}
+
+/* SVG icon theming using invert */
+img[src$=".svg"] {
+  filter: var(--svg-filter-light);
+}
+
+html.dark img[src$=".svg"] {
+  filter: var(--svg-filter-dark);
 }
 
 /* Main container */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* height: 100vh; */
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 /* auto */;
+  padding: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
 }
 
 /* Link hover states */
