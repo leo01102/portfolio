@@ -28,7 +28,6 @@ const Contact: React.FC = () => {
     success: boolean;
     message: string;
   } | null>(null);
-
   const formRef = useRef<HTMLFormElement>(null);
 
   // Initialize EmailJS
@@ -58,20 +57,17 @@ const Contact: React.FC = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
       const publicKey =
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
-
       if (!formRef.current) return;
-
       const result = await emailjs.sendForm(
         serviceId,
         templateId,
         formRef.current,
         publicKey
       );
-
       if (result.text === "OK") {
         setSubmitStatus({
           success: true,
-          message: "Message sent successfully!",
+          message: "Sent!",
         });
         setFormData({ name: "", email: "", message: "" });
       } else {
@@ -119,6 +115,16 @@ const Contact: React.FC = () => {
     link.click();
   };
 
+  const getButtonText = () => {
+    if (isSubmitting) return "Sending...";
+    if (submitStatus?.success) return "Sent!";
+    return "Send Message";
+  };
+
+  const getButtonClass = () => {
+    return `submit-button ${submitStatus?.success ? "success" : ""}`;
+  };
+
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
@@ -137,70 +143,75 @@ const Contact: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <social.icon />
-                {social.name}
+                <social.icon aria-hidden="true" />
+                <span>{social.name}</span>
               </a>
             ))}
-            <button className="download-resume" onClick={handleDownloadResume}>
-              <Download />
-              Resume
+            <button
+              className="download-resume"
+              onClick={handleDownloadResume}
+              aria-label="Download resume"
+            >
+              <Download aria-hidden="true" />
+              <span>Resume</span>
             </button>
           </div>
         </div>
-
-        <form ref={formRef} className="contact-form" onSubmit={handleSubmit}>
+        <form
+          ref={formRef}
+          className="contact-form"
+          onSubmit={handleSubmit}
+          aria-label="Contact form"
+        >
           <div className="form-group">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">NAME</label>
             <input
               type="text"
               id="name"
               name="name"
               value={formData.name}
               onChange={handleChange}
+              placeholder="Your name"
+              aria-required="true"
               required
             />
           </div>
-
           <div className="form-group">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">EMAIL</label>
             <input
               type="email"
               id="email"
               name="email"
               value={formData.email}
               onChange={handleChange}
+              placeholder="your@email.com"
+              aria-required="true"
               required
             />
           </div>
-
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">MESSAGE</label>
             <textarea
               id="message"
               name="message"
               rows={5}
               value={formData.message}
               onChange={handleChange}
+              placeholder="Your message here..."
+              aria-required="true"
               required
             />
           </div>
-
-          {submitStatus && (
-            <div
-              className={`submit-status ${
-                submitStatus.success ? "success" : "error"
-              }`}
-            >
-              {submitStatus.message}
-            </div>
+          {submitStatus && !submitStatus.success && (
+            <div className="submit-status error">{submitStatus.message}</div>
           )}
-
           <button
             type="submit"
-            className="submit-button"
+            className={getButtonClass()}
             disabled={isSubmitting}
+            aria-label={isSubmitting ? "Sending your message" : "Send message"}
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {getButtonText()}
           </button>
         </form>
       </div>
