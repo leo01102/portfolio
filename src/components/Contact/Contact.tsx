@@ -35,6 +35,22 @@ const Contact: React.FC = () => {
     emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY");
   }, []);
 
+  // Reset success message after 2 seconds
+  useEffect(() => {
+    let timeoutId: NodeJS.Timeout;
+
+    if (submitStatus?.success) {
+      timeoutId = setTimeout(() => {
+        setSubmitStatus(null);
+      }, 2000);
+    }
+
+    // Clean up the timeout if component unmounts or status changes
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [submitStatus]);
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
