@@ -1,22 +1,27 @@
-import { defineConfig } from "vite";
-import mdx from "@mdx-js/rollup";
-import react from "@vitejs/plugin-react-swc";
-import tsconfigPaths from "vite-tsconfig-paths";
-import path from "path";
+import path from 'path';
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
 
-export default defineConfig({
-  build: {
-    outDir: "dist",
-  },
-  plugins: [mdx(), react(), tsconfigPaths()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@components": path.resolve(__dirname, "./src/components"),
-      "@contexts": path.resolve(__dirname, "./src/lib/contexts"),
-      "@styles": path.resolve(__dirname, "./src/styles"),
-      "@lib": path.resolve(__dirname, "./src/lib"),
-      "@translations": path.resolve(__dirname, "./src/lib/translations"),
-    },
-  },
+export default defineConfig(({ mode }) => {
+    const env = loadEnv(mode, '.', '');
+    return {
+      server: {
+        port: 3000,
+        host: '0.0.0.0',
+      },
+      build: {
+        sourcemap: false,
+      },
+      plugins: [
+        react(),
+      ],
+      resolve: {
+        alias: {
+          '@': path.resolve(__dirname, './src'),
+          '@components': path.resolve(__dirname, './src/components'),
+          '@context': path.resolve(__dirname, './src/context'),
+          '@data': path.resolve(__dirname, './src/data'),
+        }
+      }
+    };
 });
