@@ -35,8 +35,14 @@ export const NeonButton: React.FC<NeonButtonProps> = ({
   );
 
   if (href) {
+    const isInternal = href.startsWith('#');
     return (
-      <a href={href} className={`${baseStyles} ${variants[variant]}`} target="_blank" rel="noreferrer">
+      <a 
+        href={href} 
+        className={`${baseStyles} ${variants[variant]}`} 
+        target={isInternal ? undefined : "_blank"} 
+        rel={isInternal ? undefined : "noreferrer"}
+      >
         {content}
       </a>
     );

@@ -8,8 +8,8 @@ export const Footer: React.FC = () => {
 
   return (
     <footer id="contact" className="py-24 px-6 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
-        <div>
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 relative z-10">
+        <div className="flex-1">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">{t.contact.title}</h2>
           <p className="text-xl text-textMuted mb-8 leading-relaxed max-w-lg">
             {t.contact.description}
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
           </NeonButton>
         </div>
 
-        <div className="grid grid-cols-2 gap-8">
+        <div className="flex-initial min-w-[200px]">
           <div>
             <h4 className="text-sm font-bold tracking-widest text-white uppercase mb-6">{t.contact.socialsTitle}</h4>
             <div className="flex flex-col gap-4">
@@ -37,19 +37,12 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-
-          <div>
-            <h4 className="text-sm font-bold tracking-widest text-white uppercase mb-6">{t.contact.nextStepTitle}</h4>
-            <p className="text-textMuted text-sm leading-relaxed">
-              {t.contact.nextStepDescription}
-            </p>
-          </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto mt-24 pt-8 border-t border-white/10 flex justify-center items-center">
         <p className="text-textMuted text-sm text-center">
-          © 2025 {t.personal.name}.
+          © {new Date().getFullYear()} {t.personal.name}.
         </p>
       </div>
 
