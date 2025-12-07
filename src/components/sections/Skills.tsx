@@ -5,11 +5,11 @@ import {
   SiPytorch, SiTensorflow, SiOnnx, SiPandas, SiNumpy,
   SiReact, SiNextdotjs, SiTailwindcss, SiThreedotjs, SiBootstrap, SiVite,
   SiFastapi, SiNodedotjs, SiExpress, SiPostgresql, SiMysql, SiSupabase, SiGooglecloud,
-  SiGit, SiGithub, SiPostman, SiOpenai
+  SiGit, SiGithub, SiPostman, SiOpenai, SiLinux, SiQt, SiDocker
 } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
 import { DiVisualstudio } from 'react-icons/di';
-import { Bot, Database, Code2, Cpu, Puzzle, MessageSquare, Flag, Users, Heart, RefreshCw } from 'lucide-react';
+import { Bot, Database, Code2, Cpu, Puzzle, MessageSquare, Flag, Users, Heart, RefreshCw, ShieldCheck, Lock, Server, Brain, Workflow, AudioLines, Award, Compass, Sparkles } from 'lucide-react';
 
 const iconMap: Record<string, React.ReactNode> = {
   'Python': <SiPython className="text-[#3776AB]" />,
@@ -26,7 +26,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'NumPy': <SiNumpy className="text-[#013243]" />,
   'Natural Language Processing (NLP)': <Bot className="text-primary" />,
   'Wav2Vec': <Cpu className="text-secondary" />,
-  'OpenAI API': <SiOpenai className="text-white" />,
+  'LLMs (OpenAI / Groq)': <Sparkles className="text-yellow-400" />,
   'React': <SiReact className="text-[#61DAFB]" />,
   'Next.js': <SiNextdotjs className="text-white" />,
   'Tailwind CSS': <SiTailwindcss className="text-[#06B6D4]" />,
@@ -35,6 +35,7 @@ const iconMap: Record<string, React.ReactNode> = {
   'AmCharts': <img src="/icons/AmCharts.svg" alt="AmCharts" className="w-5 h-5" />,
   'Three.js': <SiThreedotjs className="text-white" />,
   'FastAPI': <SiFastapi className="text-[#009688]" />,
+  'PyQt6': <SiQt className="text-[#41CD52]" />,
   'Node.js': <SiNodedotjs className="text-[#339933]" />,
   'Express.js': <SiExpress className="text-white" />,
   'PostgreSQL': <SiPostgresql className="text-[#4169E1]" />,
@@ -42,36 +43,51 @@ const iconMap: Record<string, React.ReactNode> = {
   'Supabase': <SiSupabase className="text-[#3ECF8E]" />,
   'Vite': <SiVite className="text-[#646CFF]" />,
   'Google Cloud': <SiGooglecloud className="text-[#4285F4]" />,
+  'Docker': <SiDocker className="text-[#2496ED]" />,
+  'SQL': <Database className="text-gray-400" />,
   'Git': <SiGit className="text-[#F05032]" />,
   'GitHub': <SiGithub className="text-white" />,
   'Postman': <SiPostman className="text-[#FF6C37]" />,
   'VS Code': <VscVscode className="text-[#007ACC]" />,
   'Visual Studio': <DiVisualstudio className="text-[#5C2D91]" />,
 
-  // Soft Skills
+  // New Technical Skills
+  'Google Cloud (GCP)': <SiGooglecloud className="text-[#4285F4]" />,
+  'RAG': <Database className="text-secondary" />,
+  'Voice AI (STT / TTS)': <AudioLines className="text-[#E91E63]" />,
+  'Linux': <SiLinux className="text-[#FCC624]" />,
+  'JWT Auth': <Lock className="text-white" />,
+  'Secure API Design': <ShieldCheck className="text-green-400" />,
+  'Diseño de API Segura': <ShieldCheck className="text-green-400" />,
+  'Data Encryption': <Lock className="text-red-400" />,
+  'Encriptación de Datos': <Lock className="text-red-400" />,
+  'Data-encryptie': <Lock className="text-red-400" />,
+  'System Architecture': <Server className="text-blue-300" />,
+  'Arquitectura de Sistemas': <Server className="text-blue-300" />,
+  'Systeemarchitectuur': <Server className="text-blue-300" />,
+  'Strategic Thinking': <Compass className="text-purple-300" />,
+
+  // Professional Core
+  'Strategic Problem Solving': <Brain className="text-purple-400" />,
+  'Resolución Estratégica de Problemas': <Brain className="text-purple-400" />,
+  'Strategisch Probleemoplossen': <Brain className="text-purple-400" />,
+  
+  'Systems Thinking': <Workflow className="text-orange-400" />,
+  'Pensamiento Sistémico': <Workflow className="text-orange-400" />,
+  'Systeemdenken': <Workflow className="text-orange-400" />,
+  
+  'Technical Leadership': <Award className="text-yellow-400" />,
+  'Liderazgo Técnico': <Award className="text-yellow-400" />,
+  'Technisch Leiderschap': <Award className="text-yellow-400" />,
+
   'Adaptability': <RefreshCw className="text-primary" />,
   'Adaptabilidad': <RefreshCw className="text-primary" />,
   'Aanpassingsvermogen': <RefreshCw className="text-primary" />,
-  
-  'Problem Solving': <Puzzle className="text-secondary" />,
-  'Resolución de Problemas': <Puzzle className="text-secondary" />,
-  'Probleemoplossing': <Puzzle className="text-secondary" />,
   
   'Communication': <MessageSquare className="text-blue-400" />,
   'Comunicación': <MessageSquare className="text-blue-400" />,
   'Communicatie': <MessageSquare className="text-blue-400" />,
   
-  'Leadership': <Flag className="text-red-500" />,
-  'Liderazgo': <Flag className="text-red-500" />,
-  'Leiderschap': <Flag className="text-red-500" />,
-  
-  'Teamwork': <Users className="text-green-500" />,
-  'Trabajo en Equipo': <Users className="text-green-500" />,
-  'Teamwerk': <Users className="text-green-500" />,
-  
-  'Emotional Intelligence': <Heart className="text-pink-500" />,
-  'Inteligencia Emocional': <Heart className="text-pink-500" />,
-  'Emotionele Intelligentie': <Heart className="text-pink-500" />
 };
 
 export const Skills: React.FC = () => {
