@@ -11,25 +11,25 @@ export const resumeData = {
       location: "Argentina",
       heroTitle: {
         prefix: "Ingeniería de ",
-        highlight1: "sistemas robustos",
-        middle: " con ",
-        highlight2: "IA estratégica."
+        highlight1: "Sistemas Inteligentes",
+        middle: " para ",
+        highlight2: "Decisiones Estratégicas."
       },
-      heroDescription: "Estudiante de 5º año de Ingeniería en Sistemas de Información. Enfocado en la construcción de arquitecturas escalables y automatización inteligente. Desarrollo sistemas modulares orientados a la performance, que automatizan flujos de trabajo y procesan datos para resolver problemas reales e impulsar decisiones estratégicas.",
+      heroDescription: "Estudiante de 5º año de Ingeniería en Sistemas de Información. Diseño soluciones escalables en Python e IA que automatizan flujos de trabajo complejos y transforman datos crudos en inteligencia de negocios accionable.",
       whatICanDo: {
         title: "LO QUE HAGO",
-        description: "Diseño arquitecturas escalables y flujos de trabajo automatizados que transforman datos crudos en inteligencia estratégica clara para la toma de decisiones.",
+        description: "Me especializo en convertir datos crudos en inteligencia estratégica utilizando sistemas full-stack seguros y escalables.",
         items: [
-          { title: 'IA Aplicada y NLP', desc: 'Agentes inteligentes y análisis automatizado' },
-          { title: 'Arquitectura de Sistemas', desc: 'Modular, escalable y de alta performance' },
-          { title: 'Automatización de Datos', desc: 'Desde inputs crudos hasta información útil' },
-          { title: 'Soluciones Estratégicas', desc: 'Resolución de problemas meticulosa y end-to-end' }
+          { title: 'Automatización Inteligente', desc: 'Despliegue de agentes de IA y pipelines NLP para automatizar flujos de trabajo.' },
+          { title: 'Sistemas de Datos Escalables', desc: 'Backends robustos en Python/FastAPI para procesamiento de alto volumen.' },
+          { title: 'Inteligencia Estratégica', desc: 'Dashboards (TypeScript) que impulsan la toma de decisiones.' },
+          { title: 'Seguridad por Diseño', desc: 'Seguridad estándar de la industria protegiendo la integridad de los datos.' }
         ]
       },
       stats: [
         { label: 'Años Programando', value: '+4' },
         { label: 'Proyectos', value: '9' },
-        { label: 'Perfil', value: 'Sistemas e IA' },
+        { label: 'Enfoque', value: 'IA & Estrategia' },
       ]
     },
     nav: {
@@ -40,37 +40,33 @@ export const resumeData = {
       role: "Ingeniería & IA"
     },
     skills: {
-      title: "Habilidades & Stack Tecnológico",
+      title: "Stack de Confianza",
       items: [
         {
-          name: 'Lenguajes',
-          skills: ['Python', 'TypeScript', 'JavaScript', 'Visual Basic .NET', 'HTML', 'CSS', 'SCSS']
+          name: 'El Cerebro (Lógica y Automatización)',
+          skills: ['Python', 'FastAPI', 'PyTorch', 'LLMs (OpenAI / Groq)', 'RAG', 'Pandas', 'NumPy', 'Voice AI (STT / TTS)']
         },
         {
-          name: 'IA & Data Science',
-          skills: ['PyTorch', 'TensorFlow', 'ONNX', 'Pandas', 'NumPy', 'Natural Language Processing (NLP)', 'Wav2Vec', 'OpenAI API']
+          name: 'La Interfaz (Entrega)',
+          skills: ['TypeScript', 'React', 'Next.js', 'PyQt6', 'Tailwind CSS', 'Lightweight Charts']
         },
         {
-          name: 'Frontend',
-          skills: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'Lightweight Charts', 'AmCharts']
+          name: 'Los Cimientos (Fiabilidad)',
+          skills: ['PostgreSQL', 'Supabase', 'Google Cloud (GCP)', 'Docker', 'Git', 'SQL']
         },
         {
-          name: 'Backend',
-          skills: ['FastAPI', 'Node.js', 'Express.js', 'Google Cloud', 'PostgreSQL', 'MySQL', 'Supabase']
+          name: 'Seguridad e Infraestructura',
+          skills: ['JWT Auth', 'Encriptación de Datos', 'Diseño de API Segura', 'Arquitectura de Sistemas']
         },
         {
-          name: 'Herramientas & Plataformas',
-          skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Visual Studio']
-        },
-        {
-          name: 'Habilidades Blandas',
-          skills: ['Adaptabilidad', 'Resolución de Problemas', 'Comunicación', 'Liderazgo', 'Trabajo en Equipo', 'Inteligencia Emocional']
+          name: 'Núcleo Profesional',
+          skills: ['Resolución Estratégica de Problemas', 'Pensamiento Sistémico', 'Liderazgo Técnico', 'Adaptabilidad', 'Comunicación']
         }
       ]
     },
     projects: {
-      title: "Proyectos destacados",
-      subtitle: "Una mezcla de investigación académica, productos funcionales y experimentación técnica.",
+      title: "Proyectos Destacados",
+      subtitle: "Sistemas diseñados para la automatización, estrategia e inteligencia.",
       projectDetails: "Detalles del Proyecto",
       lastUpdate: "ÚLTIMA ACTUALIZACIÓN",
       date: "DICIEMBRE 2025",
@@ -79,80 +75,95 @@ export const resumeData = {
       items: [
         {
           id: 'lumen',
+          visible: true,
           title: "Lumen",
-          subtitle: "Asistente IA Empática Multimodal",
+          subtitle: "Agente IA Empático Multimodal",
           category: "INVESTIGACIÓN",
-          technologies: ["Inteligencia Artificial (IA)", "Computación Afectiva", "Reconocimiento de Emociones", "Procesamiento de Lenguaje Natural (NLP)", "Open Neural Network Exchange", "Python", "FastAPI", "TypeScript", "React", "Next.js", "Desarrollo Full-Stack", "TensorFlow", "PyTorch", "Diseño de API RESTful", "Oratoria", "Creatividad e Innovación", "Investigación", "Trabajo en Equipo", "Liderazgo"],
+          technologies: ["Python", "FastAPI", "Next.js", "ONNX", "Wav2Vec2", "Computación Afectiva"],
           date: "Ago. – Oct. 2025",
           link: "https://github.com/leo01102/lumen",
           github: "https://github.com/leo01102/lumen",
-          description: "Asistente IA full-stack que analiza emociones multimodales (voz y expresiones faciales) para ofrecer respuestas contextuales en tiempo real.",
+          description: "Asistente de IA en tiempo real que analiza emociones de voz y faciales para respuestas contextuales.",
           details: [
-            "Lideré el desarrollo de un asistente IA full-stack que analiza emociones multimodales (voz y expresiones faciales) para ofrecer respuestas contextuales en tiempo real",
-            "Diseñé un backend de alto rendimiento con FastAPI, creando una API RESTful para gestionar todo el pipeline de procesamiento de la IA, desde entrada de audio hasta salida de voz sintetizada",
-            "Optimicé un modelo Wav2Vec 2.0 para reconocimiento de emociones vocales convirtiéndolo a ONNX, reduciendo significativamente la latencia de inferencia en CPU",
-            "Implementé un frontend orientado a la privacidad en Next.js y TypeScript, realizando el análisis de emociones faciales completamente del lado del cliente con face-api.js",
-            "Integré la API de Groq con Llama 3.1 para generar respuestas empáticas a alta velocidad, enriqueciendo dinámicamente los prompts con contexto emocional multimodal",
-            "Implementé una estrategia de seguridad de datos end-to-end, encriptando todas las conversaciones y hechos almacenados en SQLite usando AES"
+            "Desarrollé una arquitectura de IA multimodal segura utilizando FastAPI y React, integrando Wav2Vec2 y Groq para procesar flujos de datos de audio y faciales simultáneos.",
+            "Diseñé un motor de inferencia de alto rendimiento implementando ONNX Runtime con cuantización dinámica, reduciendo significativamente la latencia.",
+            "Implementé una capa de persistencia segura utilizando encriptación Fernet y SQL buscable para salvaguardar datos biométricos sensibles.",
+            "Automaticé la retención de contexto inteligente construyendo un pipeline recursivo que analiza el diálogo en insights estructurados."
+          ]
+        },
+        {
+          id: 'cue',
+          visible: true,
+          title: "Cue",
+          subtitle: "Asistente IA de Escritorio",
+          category: "PRODUCTO",
+          technologies: ["Python", "PyQt6", "AssemblyAI", "Llama 3.1", "RAG", "Multi-threading"],
+          date: "Nov. 2025 – Presente",
+          link: "https://github.com/leo01102/cue",
+          github: "https://github.com/leo01102/cue",
+          description: "Agente de escritorio multi-hilo con capacidades RAG (Generación Aumentada por Recuperación).",
+          details: [
+            "Diseñé un agente de IA de escritorio multi-hilo usando Python y PyQt6, orquestando captura de audio asíncrona e inferencia de LLM sin congelar la UI.",
+            "Integré funcionalidad RAG utilizando Scikit-learn/TF-IDF para inyectar dinámicamente contexto de base de conocimiento local en Llama 3.1.",
+            "Optimicé un pipeline de procesamiento de señales end-to-end usando NumPy para remuestreo de audio en tiempo real antes de la carga a la nube."
           ]
         },
         {
           id: 'arstats',
+          visible: true,
           title: "ARSTATS",
-          subtitle: null,
+          subtitle: "Plataforma de Estrategia de Datos",
           category: "PRODUCTO",
-          technologies: ["React", "TypeScript", "Python", "PostgreSQL"],
+          technologies: ["React", "TypeScript", "Python", "PostgreSQL", "Pipelines ETL"],
           date: "Dic. 2024 – Presente",
           link: "https://github.com/leo01102/arstats",
           github: "https://github.com/leo01102/arstats",
-          description: "Aplicación web full-stack de visualización de datos usando React, TypeScript y Python.",
+          description: "Plataforma de inteligencia financiera que automatiza la ingesta de más de 50 indicadores económicos.",
           details: [
-            "Desarrollé una aplicación web full-stack de visualización de datos usando React, TypeScript y Python",
-            "Implementé una base de datos PostgreSQL con Supabase para gestión y consulta eficiente de datos",
-            "Utilicé la librería Lightweight Charts para crear visualizaciones interactivas e informativas",
-            "Diseñé y mantuve APIs RESTful para la transferencia de datos entre frontend y backend",
-            "Usé Python para construir pipelines que integran APIs externas y actualizan automáticamente la base de datos"
+            "Construí un pipeline ETL modular en Python para automatizar la ingesta y normalización de indicadores económicos de APIs gubernamentales dispares.",
+            "Desarrollé un dashboard de alto rendimiento usando React y Vite, permitiendo visualización en tiempo real de tendencias de mercado vía componentes optimizados.",
+            "Ideé un sistema de validación de datos resiliente para detectar y corregir automáticamente anomalías estadísticas históricas.",
+            "Mejoré la escalabilidad del sistema implementando seguridad estricta de tipos en TypeScript y cargadores de base de datos por lotes eficientes."
           ]
         },
         {
           id: 'ludodidactas',
+          visible: true,
           title: "Ludodidactas",
-          subtitle: "Plataforma de Edutainment",
+          subtitle: "Ecosistema Educativo",
           category: "EDUCACIÓN",
-          technologies: ["React", "Node.js", "Express.js", "Unity", "MySQL", "Tailwind CSS", "JavaScript", "APIs REST", "Git", "Vite", "JWT", "Desarrollo de Videojuegos", "Arquitectura de Software", "Trabajo en Equipo"],
+          technologies: ["Node.js", "React", "Unity", "MySQL", "Sistemas Distribuidos"],
           date: "Mar. – Nov. 2025",
           link: "https://github.com/leo01102/ludodidactas",
           github: "https://github.com/leo01102/ludodidactas",
-          description: "Plataforma educativa integral que combina juegos Unity con un dashboard de seguimiento académico.",
+          description: "Plataforma escalable que une juegos Unity WebGL con un dashboard académico en React.",
           details: [
-            "Diseñé la arquitectura full-stack completa e implementé la mayor parte del código base, actuando como el principal referente técnico de una plataforma educativa integral",
-            "Desarrollé una API RESTful escalable con Node.js y Express.js, implementando autenticación segura (JWT), sincronización de datos en tiempo real y analíticas avanzadas para docentes",
-            "Construí un frontend responsivo y de alto rendimiento para paneles de administración y docencia usando React, Vite y Tailwind CSS, integrando Recharts para visualización de datos",
-            "Integré juegos educativos Unity WebGL directamente en la aplicación React, estableciendo un puente fluido para el flujo de datos bidireccional y el seguimiento del progreso",
-            "Diseñé y optimicé un esquema de base de datos MySQL para gestionar eficientemente relaciones complejas entre estudiantes, docentes, cursos y métricas de juego",
-            "Colaboré en equipo utilizando una metodología Ágil híbrida (Scrum/XP) y Git, asegurando altos estándares de calidad de código y entrega continua de funcionalidades"
+            "Arquitecté un sistema distribuido escalable integrando Unity WebGL y React, ingiriendo telemetría en tiempo real en MySQL.",
+            "Desarrollé un motor de análisis automatizado que transforma métricas crudas de juego en insights educativos estratégicos vía agregaciones SQL.",
+            "Fortifiqué la infraestructura de seguridad usando un patrón Repository en capas con autenticación JWT y hashing Bcrypt.",
+            "Agilicé la gestión de estado del frontend usando TanStack Query, reduciendo la latencia para consultas de alto volumen."
           ]
         },
         {
           id: 'edulytics',
+          visible: true,
           title: "Edulytics",
-          subtitle: "Análisis Automatizado de Feedback",
+          subtitle: "Motor de Insights Automatizado",
           category: "PROTOTIPO",
-          technologies: ["OpenAI API", "Python", "Google Cloud Platform (GCP)", "Pandas", "NumPy", "Trabajo en Equipo", "Liderazgo"],
+          technologies: ["Python", "LLMs (OpenAI / Groq)", "GCP", "Pandas", "NLP"],
           date: "Oct. – Nov. 2024",
           link: "https://github.com/leo01102/edulytics",
           github: "https://github.com/leo01102/edulytics",
-          description: "Sistema de análisis de feedback estudiantil automatizado mediante NLP y OpenAI.",
+          description: "Sistema automatizado de análisis de feedback utilizando NLP para estrategias de retención.",
           details: [
-            "Lideré el desarrollo de un prototipo de feedback, definiendo la arquitectura y gestionando el uso de Google Cloud",
-            "Implementé NLP con la API de OpenAI (ChatGPT) para automatizar análisis de feedback de estudiantes",
-            "Diseñé un sistema prototipo para recopilar, procesar y analizar feedback, proporcionando información accionable",
-            "Utilicé Python, Pandas y NumPy para procesamiento de datos e integración de APIs, y Google Cloud para despliegue escalable",
-            "Gestioné el control de versiones del equipo con Git para asegurar la organización del código"
+            "Orquesté un pipeline de inteligencia de datos automatizado usando Python/GCP para ingerir feedback y despachar estrategias de intervención.",
+            "Arquitecté un sistema híbrido de NLP combinando heurísticas de Pandas con GPT-4o para análisis de sentimiento cualitativo.",
+            "Diseñé un módulo estadístico robusto usando NumPy para correlacionar carga académica con métricas de bienestar mental."
           ]
         },
         {
           id: 'librarium',
+          visible: false,
           title: "Librarium",
           subtitle: "Sistema de Inventario",
           category: "DESKTOP",
@@ -170,6 +181,7 @@ export const resumeData = {
         },
         {
           id: 'bookstore',
+          visible: false,
           title: "Sistema de Inventario de Librería",
           subtitle: "Web",
           category: "WEB",
@@ -188,6 +200,7 @@ export const resumeData = {
         },
         {
           id: 'classic-ml',
+          visible: false,
           title: "Classic ML",
           subtitle: "Algoritmos de Machine Learning",
           category: "EDUCACIÓN",
@@ -205,6 +218,7 @@ export const resumeData = {
         },
         {
           id: 'tecnoplus',
+          visible: false,
           title: "TecnoPlus",
           subtitle: "E-commerce",
           category: "WEB",
@@ -230,7 +244,7 @@ export const resumeData = {
           event: "XXIII Encuentro Informático Riojano (EILAR)",
           role: "Expositor",
           date: "Oct. 2025",
-          description: "Presentación del prototipo “Lumen – Asistente IA Empática Multimodal”, abordando temas de computación afectiva e inteligencia artificial conversacional.",
+          description: "Presentación de “Lumen – Asistente de IA Empático Multimodal”, abordando la arquitectura de sistemas de computación afectiva y el futuro de la IA conversacional.",
           certificate: "https://www.linkedin.com/in/leonardo-rearte/details/certifications/1762355017963/single-media-viewer/",
           certificateLabel: "Ver Certificado"
         }
@@ -241,8 +255,6 @@ export const resumeData = {
       description: "Cuéntame brevemente quién eres y qué problema quieres resolver.",
       cta: "Enviar correo",
       socialsTitle: "REDES SOCIALES",
-      nextStepTitle: "PRÓXIMO PASO",
-      nextStepDescription: "Envíame un correo y me pondré en contacto contigo lo antes posible.",
       rights: "Todos los derechos reservados."
     }
   },
@@ -256,25 +268,25 @@ export const resumeData = {
       location: "Argentina",
       heroTitle: {
         prefix: "Engineering ",
-        highlight1: "robust systems",
-        middle: " with ",
-        highlight2: "Strategic AI."
+        highlight1: "Intelligent Systems",
+        middle: " for ",
+        highlight2: "Strategic Decisions."
       },
-      heroDescription: "5th-year Information Systems Engineering student. Focused on building scalable architecture and intelligent automation. Developing performance-driven, modular systems that automate workflows and process data to solve real-world problems and drive strategic decisions.",
+      heroDescription: "5th-year Information Systems Engineering student. I architect scalable Python & AI solutions that automate complex workflows and transform raw data into actionable business intelligence.",
       whatICanDo: {
         title: "WHAT I CAN DO",
-        description: "I engineer scalable architectures and automated workflows that transform raw data into clear, strategic intelligence for decision-making.",
+        description: "I specialize in turning raw data into strategic intelligence using secure, scalable full-stack systems.",
         items: [
-          { title: 'Applied AI & NLP', desc: 'Intelligent agents & automated analysis' },
-          { title: 'System Architecture', desc: 'Modular, scalable & high-performance' },
-          { title: 'Data Automation', desc: 'From raw inputs to useful information' },
-          { title: 'Strategic Solutions', desc: 'Meticulous end-to-end problem solving' }
+          { title: 'Intelligent Automation', desc: 'Deploying AI agents & NLP pipelines to automate workflows.' },
+          { title: 'Scalable Data Systems', desc: 'Robust Python/FastAPI backends for high-volume processing.' },
+          { title: 'Strategic Intelligence', desc: 'Dashboards (TypeScript) that drive decision-making.' },
+          { title: 'Secure-by-Design', desc: 'Industry-standard security protecting data integrity.' }
         ]
       },
       stats: [
         { label: 'Years Coding', value: '+4' },
         { label: 'Projects', value: '9' },
-        { label: 'Profile', value: 'Systems & AI' },
+        { label: 'Focus', value: 'AI & Strategy' },
       ]
     },
     nav: {
@@ -285,37 +297,33 @@ export const resumeData = {
       role: "Engineering & AI"
     },
     skills: {
-      title: "Skills & Tech Stack",
+      title: "Stack of Confidence",
       items: [
         {
-          name: 'Languages',
-          skills: ['Python', 'TypeScript', 'JavaScript', 'Visual Basic .NET', 'HTML', 'CSS', 'SCSS']
+          name: 'The Brain (Logic & Automation)',
+          skills: ['Python', 'FastAPI', 'PyTorch', 'LLMs (OpenAI / Groq)', 'RAG', 'Pandas', 'NumPy', 'Voice AI (STT / TTS)']
         },
         {
-          name: 'AI & Data Science',
-          skills: ['PyTorch', 'TensorFlow', 'ONNX', 'Pandas', 'NumPy', 'Natural Language Processing (NLP)', 'Wav2Vec', 'OpenAI API']
+          name: 'The Interface (Delivery)',
+          skills: ['TypeScript', 'React', 'Next.js', 'PyQt6', 'Tailwind CSS', 'Lightweight Charts']
         },
         {
-          name: 'Frontend',
-          skills: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'Lightweight Charts', 'AmCharts']
+          name: 'The Foundation (Reliability)',
+          skills: ['PostgreSQL', 'Supabase', 'Google Cloud (GCP)', 'Docker', 'Git', 'SQL']
         },
         {
-          name: 'Backend',
-          skills: ['FastAPI', 'Node.js', 'Express.js', 'Google Cloud', 'PostgreSQL', 'MySQL', 'Supabase']
+          name: 'Security & Strategy',
+          skills: ['JWT Auth', 'Data Encryption', 'Secure API Design', 'System Architecture']
         },
         {
-          name: 'Tools & Platforms',
-          skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Visual Studio']
-        },
-        {
-          name: 'Soft Skills',
-          skills: ['Adaptability', 'Problem Solving', 'Communication', 'Leadership', 'Teamwork', 'Emotional Intelligence']
+          name: 'Professional Core',
+          skills: ['Strategic Problem Solving', 'Systems Thinking', 'Technical Leadership', 'Adaptability', 'Communication']
         }
       ]
     },
     projects: {
       title: "Featured Projects",
-      subtitle: "A mix of academic research, functional products, and technical experimentation.",
+      subtitle: "Systems designed for automation, strategy, and intelligence.",
       projectDetails: "Project Details",
       lastUpdate: "LAST UPDATE",
       date: "DECEMBER 2025",
@@ -324,88 +332,103 @@ export const resumeData = {
       items: [
         {
           id: 'lumen',
+          visible: true,
           title: "Lumen",
-          subtitle: "Multimodal Empathic AI Assistant",
+          subtitle: "Multimodal Empathic AI Agent",
           category: "RESEARCH",
-          technologies: ["Artificial Intelligence (AI)", "Affective Computing", "Emotion Recognition", "Natural Language Processing (NLP)", "Open Neural Network Exchange", "Python", "FastAPI", "TypeScript", "React", "Next.js", "Full-Stack Development", "TensorFlow", "PyTorch", "RESTful API Design", "Public Speaking", "Creativity and Innovation", "Research", "Teamwork", "Leadership"],
+          technologies: ["Python", "FastAPI", "Next.js", "ONNX", "Wav2Vec2", "Affective Computing"],
           date: "Aug. – Oct. 2025",
           link: "https://github.com/leo01102/lumen",
           github: "https://github.com/leo01102/lumen",
-          description: "Full-stack AI assistant that analyzes multimodal emotions (voice and facial expressions) to provide real-time contextual responses.",
+          description: "Real-time AI assistant analyzing voice and facial emotions for contextual responses.",
           details: [
-            "Led the development of a full-stack AI assistant that analyzes multimodal emotions (voice and facial expressions) to provide real-time contextual responses",
-            "Designed a high-performance backend using FastAPI, creating a RESTful API to manage the entire AI processing pipeline, from audio input to synthesized speech output",
-            "Optimized a Wav2Vec 2.0 model for vocal emotion recognition by converting it to ONNX, significantly reducing CPU inference latency",
-            "Implemented a privacy-first frontend in Next.js and TypeScript, performing facial emotion analysis entirely client-side using face-api.js",
-            "Integrated the Groq API with Llama 3.1 to generate high-speed empathic responses, dynamically enriching prompts with multimodal emotional context",
-            "Implemented an end-to-end data security strategy, encrypting all conversations and facts stored in SQLite using AES"
+            "Developed a secure multimodal AI architecture using FastAPI and React, integrating Wav2Vec2 and Groq to process simultaneous audio and facial data flows.",
+            "Engineered a high-performance inference engine by implementing ONNX Runtime with dynamic quantization, significantly reducing latency.",
+            "Implemented a secure persistence layer using Fernet encryption and searchable SQL to safeguard sensitive biometric data.",
+            "Automated intelligent context retention by building a recursive pipeline that parses dialogue into structured insights."
+          ]
+        },
+        {
+          id: 'cue',
+          visible: true,
+          title: "Cue",
+          subtitle: "Desktop AI Assistant",
+          category: "PRODUCT",
+          technologies: ["Python", "PyQt6", "AssemblyAI", "Llama 3.1", "RAG", "Multi-threading"],
+          date: "Nov. 2025 – Present",
+          link: "https://github.com/leo01102/cue",
+          github: "https://github.com/leo01102/cue",
+          description: "Multi-threaded desktop agent with RAG (Retrieval-Augmented Generation) capabilities.",
+          details: [
+            "Designed a multi-threaded desktop AI agent using Python and PyQt6, orchestrating asynchronous audio capture and LLM inference without UI freezing.",
+            "Integrated RAG functionality using Scikit-learn/TF-IDF to dynamically inject local knowledge base context into Llama 3.1.",
+            "Optimized an end-to-end signal processing pipeline using NumPy for real-time audio resampling before cloud offloading."
           ]
         },
         {
           id: 'arstats',
+          visible: true,
           title: "ARSTATS",
-          subtitle: null,
+          subtitle: "Data Strategy Platform",
           category: "PRODUCT",
-          technologies: ["React", "TypeScript", "Python", "PostgreSQL"],
+          technologies: ["React", "TypeScript", "Python", "PostgreSQL", "ETL Pipelines"],
           date: "Dec. 2024 – Present",
           link: "https://github.com/leo01102/arstats",
           github: "https://github.com/leo01102/arstats",
-          description: "Full-stack data visualization web application using React, TypeScript, and Python.",
+          description: "Financial intelligence platform automating the ingestion of 50+ economic indicators.",
           details: [
-            "Developed a full-stack data visualization web application using React, TypeScript, and Python",
-            "Implemented a PostgreSQL database with Supabase for efficient data management and querying",
-            "Utilized the Lightweight Charts library to create interactive and informative visualizations",
-            "Designed and maintained RESTful APIs for data transfer between frontend and backend",
-            "Used Python to build pipelines that integrate external APIs and automatically update the database"
+            "Constructed a modular Python ETL pipeline to automate the ingestion and normalization of economic indicators from disparate government APIs.",
+            "Built a high-performance dashboard using React and Vite, enabling real-time visualization of market trends via optimized charts.",
+            "Devised a resilient data validation system to automatically detect and correct historical statistical anomalies.",
+            "Enhanced system scalability by implementing strict TypeScript safety and efficient batch database loaders."
           ]
         },
         {
           id: 'ludodidactas',
+          visible: true,
           title: "Ludodidactas",
-          subtitle: "Edutainment Platform",
+          subtitle: "Educational Ecosystem",
           category: "EDUCATION",
-          technologies: ["React", "Node.js", "Express.js", "Unity", "MySQL", "Tailwind CSS", "JavaScript", "REST APIs", "Git", "Vite", "JWT", "Game Development", "Software Architecture", "Teamwork"],
+          technologies: ["Node.js", "React", "Unity", "MySQL", "Distributed Systems"],
           date: "Mar. – Nov. 2025",
           link: "https://github.com/leo01102/ludodidactas",
           github: "https://github.com/leo01102/ludodidactas",
-          description: "Comprehensive educational platform combining Unity games with an academic tracking dashboard.",
+          description: "Scalable platform bridging Unity WebGL games with a React academic dashboard.",
           details: [
-            "Engineered the core full-stack architecture and implemented the majority of the codebase, serving as the primary technical lead",
-            "Architected a scalable RESTful API with Node.js/Express.js, implementing secure JWT authentication, real-time data sync, and teacher analytics",
-            "Built a high-performance dashboard using React, Vite, and Tailwind CSS, integrating Recharts for data visualization",
-            "Seamlessly integrated Unity WebGL games into the React application, establishing a bi-directional bridge for real-time progress tracking",
-            "Designed an optimized MySQL schema to efficiently manage complex associations between students, teachers, and gameplay metrics",
-            "Collaborated using a hybrid agile methodology (Scrum/XP) and Git, ensuring strict code quality standards and continuous feature delivery"
+            "Architected a scalable distributed system integrating Unity WebGL and React, ingesting real-time telemetry into MySQL.",
+            "Developed an automated analytics engine transforming raw gameplay metrics into strategic educational insights via SQL aggregations.",
+            "Fortified security infrastructure using a layered Repository pattern with JWT authentication and Bcrypt hashing.",
+            "Streamlined frontend state management using TanStack Query, reducing latency for high-volume queries."
           ]
         },
         {
           id: 'edulytics',
+          visible: true,
           title: "Edulytics",
-          subtitle: "Automated Feedback Analysis",
+          subtitle: "Automated Insight Engine",
           category: "PROTOTYPE",
-          technologies: ["OpenAI API", "Python", "Google Cloud Platform (GCP)", "Pandas", "NumPy", "Teamwork", "Leadership"],
+          technologies: ["Python", "LLMs (OpenAI / Groq)", "GCP", "Pandas", "NLP"],
           date: "Oct. – Nov. 2024",
           link: "https://github.com/leo01102/edulytics",
           github: "https://github.com/leo01102/edulytics",
-          description: "Automated student feedback analysis system using NLP and OpenAI.",
+          description: "Automated feedback analysis system utilizing NLP for student retention strategies.",
           details: [
-            "Led the development of a feedback prototype, defining the architecture and managing Google Cloud usage",
-            "Implemented NLP using the OpenAI API (ChatGPT) to automate student feedback analysis",
-            "Designed a prototype system to collect, process, and analyze feedback, providing actionable insights",
-            "Used Python, Pandas, and NumPy for data processing and API integration, and Google Cloud for scalable deployment",
-            "Managed team version control using Git to ensure code organization"
+            "Orchestrated an automated data intelligence pipeline using Python/GCP to ingest feedback and dispatch intervention strategies.",
+            "Architected a hybrid NLP system combining Pandas heuristics with GPT-4o for qualitative sentiment analysis.",
+            "Engineered a robust statistical module using NumPy to correlate academic load with mental well-being metrics."
           ]
         },
         {
           id: 'librarium',
+          visible: false,
           title: "Librarium",
           subtitle: "Inventory System",
           category: "DESKTOP",
-          technologies: ["Visual Basic .NET (VB.NET)", "MySQL", "Git", "Visual Studio", "Teamwork", "Leadership"],
+          technologies: ["Visual Basic .NET", "MySQL", "Git"],
           date: "Jul. – Oct. 2024",
           link: "https://github.com/leo01102/librarium",
           github: "https://github.com/leo01102/librarium",
-          description: "Comprehensive inventory management and point-of-sale system with secure authentication.",
+          description: "Comprehensive inventory management system.",
           details: [
             "Led the development of a comprehensive inventory management and point-of-sale system with secure authentication and exportable reporting",
             "Designed a modern User Interface (UI) by implementing a custom control library distributed via NuGet",
@@ -415,14 +438,15 @@ export const resumeData = {
         },
         {
           id: 'bookstore',
+          visible: false,
           title: "Bookstore Inventory System",
           subtitle: "Web",
           category: "WEB",
-          technologies: ["React", "Vite", "Express.js", "MySQL"],
+          technologies: ["React", "Express.js", "MySQL"],
           date: "Oct. – Nov. 2024",
           link: "#",
           github: null,
-          description: "Full-stack web application for bookstore inventory management.",
+          description: "Full-stack web application for inventory management.",
           details: [
             "Developed a full-stack web application for bookstore inventory management using React, Node.js, and Express.js",
             "Implemented a RESTful API for efficient communication between frontend and backend",
@@ -433,14 +457,15 @@ export const resumeData = {
         },
         {
           id: 'classic-ml',
+          visible: false,
           title: "Classic ML",
-          subtitle: "Machine Learning Algorithms",
+          subtitle: "ML Algorithms",
           category: "EDUCATION",
-          technologies: ["Machine Learning", "Algorithm Implementation", "Python", "Data Analysis", "Data Visualization", "Teamwork", "Leadership"],
+          technologies: ["Python", "Machine Learning"],
           date: "May – Jun. 2025",
           link: "https://github.com/leo01102/classic-ml",
           github: "https://github.com/leo01102/classic-ml",
-          description: "Implementation from scratch of classic ML algorithms (K-means, regression, perceptron).",
+          description: "Implementation of ML algorithms from scratch.",
           details: [
             "Implemented K-means, linear regression, and perceptron algorithms from scratch in Python",
             "Built interactive CLI tools for data input, real-time predictions, and result visualization",
@@ -450,14 +475,15 @@ export const resumeData = {
         },
         {
           id: 'tecnoplus',
+          visible: false,
           title: "TecnoPlus",
           subtitle: "E-commerce",
           category: "WEB",
-          technologies: ["Wordpress Development", "WooCommerce", "Payment Gateways", "Responsive Web Design", "Elementor", "Teamwork", "Leadership"],
+          technologies: ["WordPress", "WooCommerce"],
           date: "May – Jun. 2025",
           link: "#",
           github: null,
-          description: "E-commerce site with payment integration and bulk product management.",
+          description: "E-commerce site with payment integration.",
           details: [
             "Led the technical development of an e-commerce site, coordinating WooCommerce customization and CSS implementation",
             "Integrated Mercado Pago payment gateway (sandbox mode) and automated product and category management via bulk import (CSV)",
@@ -475,7 +501,7 @@ export const resumeData = {
           event: "XXIII Riojan Informatics Meeting (EILAR)",
           role: "Speaker",
           date: "Oct. 2025",
-          description: "Presented the prototype “Lumen – Multimodal Empathic AI Assistant”, covering topics on affective computing and conversational artificial intelligence.",
+          description: "Presented “Lumen – Multimodal Empathic AI Assistant,” discussing the architecture of affective computing systems and the future of conversational AI.",
           certificate: "https://www.linkedin.com/in/leonardo-rearte/details/certifications/1762355017963/single-media-viewer/",
           certificateLabel: "View Certificate"
         }
@@ -486,8 +512,6 @@ export const resumeData = {
       description: "Tell me briefly who you are and what problem you want to solve.",
       cta: "Send Email",
       socialsTitle: "SOCIALS",
-      nextStepTitle: "NEXT STEP",
-      nextStepDescription: "Send me an email and I'll get back to you as soon as possible.",
       rights: "All rights reserved."
     }
   },
@@ -501,25 +525,25 @@ export const resumeData = {
       location: "Argentinië",
       heroTitle: {
         prefix: "Ontwikkeling van ",
-        highlight1: "robuuste systemen",
-        middle: ", met ",
-        highlight2: "Strategische AI."
+        highlight1: "Intelligente Systemen",
+        middle: " voor ",
+        highlight2: "Strategische Beslissingen."
       },
-      heroDescription: "Vijfdejaarsstudent Ingenieurswetenschappen (Informatiesystemen). Ontwikkeling van schaalbare full-stack applicaties en automatisatie van workflows met datagedreven oplossingen. Gefocust op performantie, architectuur en het oplossen van problemen uit de praktijk.",
+      heroDescription: "Vijfdejaarsstudent Ingenieurswetenschappen (Informatiesystemen). Ik ontwerp schaalbare Python- en AI-oplossingen die complexe workflows automatiseren en ruwe data omzetten in actiegerichte business intelligence.",
       whatICanDo: {
         title: "WAT IK KAN",
-        description: "Ik ontwerp schaalbare architecturen en geautomatiseerde workflows die ruwe data omzetten in heldere, strategische inzichten voor besluitvorming.",
+        description: "Ik specialiseer me in het omzetten van ruwe data naar strategische inzichten met behulp van veilige, schaalbare full-stack systemen.",
         items: [
-          { title: 'Toegepaste AI & NLP', desc: 'Intelligente agenten & geautomatiseerde analyse' },
-          { title: 'Systeemarchitectuur', desc: 'Modulair, schaalbaar & hoge performantie' },
-          { title: 'Data-automatisatie', desc: 'Van ruwe input naar bruikbare informatie' },
-          { title: 'Strategische Oplossingen', desc: 'Meticuleuze end-to-end probleemoplossing' }
+          { title: 'Intelligente Automatisering', desc: 'Implementatie van AI-agenten & NLP-pipelines voor workflow-automatisatie.' },
+          { title: 'Schaalbare Datasystemen', desc: 'Robuuste Python/FastAPI backends voor verwerking van grote volumes.' },
+          { title: 'Strategische Intelligentie', desc: 'Dashboards (TypeScript) die besluitvorming aansturen.' },
+          { title: 'Secure-by-Design', desc: 'Industriestandaard beveiliging die data-integriteit beschermt.' }
         ]
       },
       stats: [
         { label: 'Jaren Coderen', value: '+4' },
         { label: 'Projecten', value: '9' },
-        { label: 'Profiel', value: 'Systemen & AI' },
+        { label: 'Focus', value: 'AI & Strategie' },
       ]
     },
     nav: {
@@ -530,37 +554,33 @@ export const resumeData = {
       role: "Engineering & AI"
     },
     skills: {
-      title: "Vaardigheden & Tech Stack",
+      title: "Tech Stack",
       items: [
         {
-          name: 'Talen',
-          skills: ['Python', 'TypeScript', 'JavaScript', 'Visual Basic .NET', 'HTML/CSS/SCSS']
+          name: 'Het Brein (Logica & Automatisering)',
+          skills: ['Python', 'FastAPI', 'PyTorch', 'LLMs (OpenAI / Groq)', 'RAG', 'Pandas', 'NumPy', 'Voice AI (STT / TTS)']
         },
         {
-          name: 'AI & Data Science',
-          skills: ['PyTorch', 'TensorFlow', 'ONNX', 'Pandas', 'NumPy', 'Natural Language Processing (NLP)', 'Wav2Vec', 'OpenAI API']
+          name: 'De Interface (Levering)',
+          skills: ['TypeScript', 'React', 'Next.js', 'PyQt6', 'Tailwind CSS', 'Lightweight Charts']
         },
         {
-          name: 'Frontend',
-          skills: ['React', 'Next.js', 'Vite', 'Tailwind CSS', 'Bootstrap', 'Three.js', 'Lightweight Charts', 'AmCharts']
+          name: 'De Fundering (Betrouwbaarheid)',
+          skills: ['PostgreSQL', 'Supabase', 'Google Cloud (GCP)', 'Docker', 'Git', 'SQL']
         },
         {
-          name: 'Backend',
-          skills: ['FastAPI', 'Node.js', 'Express.js', 'Google Cloud', 'PostgreSQL', 'MySQL', 'Supabase']
+          name: 'Beveiliging & Infrastructuur',
+          skills: ['JWT Auth', 'Data-encryptie', 'Secure API Design', 'Systeemarchitectuur']
         },
         {
-          name: 'Tools & Platforms',
-          skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'Visual Studio']
-        },
-        {
-          name: 'Soft Skills',
-          skills: ['Aanpassingsvermogen', 'Probleemoplossing', 'Communicatie', 'Leiderschap', 'Teamwerk', 'Emotionele Intelligentie']
+          name: 'Professionele Kern',
+          skills: ['Strategisch Probleemoplossen', 'Systeemdenken', 'Technisch Leiderschap', 'Aanpassingsvermogen', 'Communicatie']
         }
       ]
     },
     projects: {
       title: "Uitgelichte Projecten",
-      subtitle: "Een mix van academisch onderzoek, functionele producten en technische experimenten.",
+      subtitle: "Systemen ontworpen voor automatisering, strategie en intelligentie.",
       projectDetails: "Projectdetails",
       lastUpdate: "LAATSTE UPDATE",
       date: "DECEMBER 2025",
@@ -569,88 +589,103 @@ export const resumeData = {
       items: [
         {
           id: 'lumen',
+          visible: true,
           title: "Lumen",
-          subtitle: "Multimodale Empatische AI-Assistent",
+          subtitle: "Multimodale Empatische AI-Agent",
           category: "ONDERZOEK",
-          technologies: ["Kunstmatige Intelligentie (AI)", "Affective Computing", "Emotieherkenning", "Natural Language Processing (NLP)", "Open Neural Network Exchange", "Python", "FastAPI", "TypeScript", "React", "Next.js", "Full-Stack Development", "TensorFlow", "PyTorch", "RESTful API Design", "Spreken in het openbaar", "Creativiteit en Innovatie", "Onderzoek", "Teamwerk", "Leiderschap"],
+          technologies: ["Python", "FastAPI", "Next.js", "ONNX", "Wav2Vec2", "Affective Computing"],
           date: "aug. – okt. 2025",
           link: "https://github.com/leo01102/lumen",
           github: "https://github.com/leo01102/lumen",
-          description: "Full-stack AI-assistent die multimodale emoties (stem en gezichtsuitdrukkingen) analyseert om real-time contextuele antwoorden te bieden.",
+          description: "Real-time AI-assistent die stem- en gezichtsemoties analyseert voor contextuele antwoorden.",
           details: [
-            "Leiding gegeven aan de ontwikkeling van een full-stack AI-assistent die multimodale emoties (stem en gezichtsuitdrukkingen) analyseert om real-time contextuele antwoorden te bieden",
-            "Een high-performance backend ontworpen met FastAPI, waarbij een RESTful API werd gecreëerd om de volledige AI-processing pipeline te beheren, van audio-input tot gesynthetiseerde spraakoutput",
-            "Een Wav2Vec 2.0 model geoptimaliseerd voor vocale emotieherkenning door conversie naar ONNX, wat de inferentie-latentie op de CPU aanzienlijk verminderde",
-            "Een privacy-gerichte frontend geïmplementeerd in Next.js en TypeScript, waarbij gezichtsemotie-analyse volledig client-side werd uitgevoerd met face-api.js",
-            "De Groq API geïntegreerd met Llama 3.1 om razendsnelle empatische reacties te genereren, waarbij prompts dynamisch werden verrijkt met multimodale emotionele context",
-            "Een end-to-end beveiligingsstrategie geïmplementeerd, waarbij alle gesprekken en feiten opgeslagen in SQLite werden versleuteld met AES"
+            "Ontwikkelde een veilige multimodale AI-architectuur met FastAPI en React, die Wav2Vec2 en Groq integreert om gelijktijdige audio- en gezichtsdatastromen te verwerken.",
+            "Ontwierp een high-performance inferentie-engine door implementatie van ONNX Runtime met dynamische kwantisatie, wat de latentie aanzienlijk verminderde.",
+            "Implementeerde een veilige persistentielaag met Fernet-encryptie en doorzoekbare SQL om gevoelige biometrische gegevens te beschermen.",
+            "Automatiseerde intelligent contextbehoud door een recursieve pipeline te bouwen die dialoog omzet in gestructureerde inzichten."
+          ]
+        },
+        {
+          id: 'cue',
+          visible: true,
+          title: "Cue",
+          subtitle: "Desktop AI-Assistent",
+          category: "PRODUCT",
+          technologies: ["Python", "PyQt6", "AssemblyAI", "Llama 3.1", "RAG", "Multi-threading"],
+          date: "nov. 2025 – Heden",
+          link: "https://github.com/leo01102/cue",
+          github: "https://github.com/leo01102/cue",
+          description: "Multi-threaded desktop-agent met RAG (Retrieval-Augmented Generation) mogelijkheden.",
+          details: [
+            "Ontwierp een multi-threaded desktop AI-agent met Python en PyQt6, die asynchrone audio-opname en LLM-inferentie orkestreert zonder de UI te bevriezen.",
+            "Integreerde RAG-functionaliteit met Scikit-learn/TF-IDF om dynamisch lokale kennisbasis-context in Llama 3.1 te injecteren.",
+            "Optimaliseerde een end-to-end signaalverwerkingspipeline met NumPy voor real-time audio-resampling vóór cloud-upload."
           ]
         },
         {
           id: 'arstats',
+          visible: true,
           title: "ARSTATS",
-          subtitle: null,
+          subtitle: "Datastrategie Platform",
           category: "PRODUCT",
-          technologies: ["React", "TypeScript", "Python", "PostgreSQL"],
+          technologies: ["React", "TypeScript", "Python", "PostgreSQL", "ETL Pipelines"],
           date: "dec. 2024 – Heden",
           link: "https://github.com/leo01102/arstats",
           github: "https://github.com/leo01102/arstats",
-          description: "Een full-stack webapplicatie voor datavisualisatie ontwikkeld met React, TypeScript en Python.",
+          description: "Financieel intelligentieplatform dat de inname van 50+ economische indicatoren automatiseert.",
           details: [
-            "Een full-stack webapplicatie voor datavisualisatie ontwikkeld met React, TypeScript en Python",
-            "Een PostgreSQL database geïmplementeerd met Supabase voor efficiënt databeheer en querying",
-            "De Lightweight Charts bibliotheek gebruikt om interactieve en informatieve visualisaties te creëren",
-            "RESTful API's ontworpen en onderhouden voor dataoverdracht tussen frontend en backend",
-            "Python gebruikt om pipelines te bouwen die externe API's integreren en de database automatisch bijwerken"
+            "Bouwde een modulaire Python ETL-pipeline om de inname en normalisatie van economische indicatoren van diverse overheids-API's te automatiseren.",
+            "Ontwikkelde een high-performance dashboard met React en Vite, voor real-time visualisatie van markttrends via geoptimaliseerde grafieken.",
+            "Ontwierp een veerkrachtig datavalidatiesysteem om automatisch historische statistische anomalieën te detecteren en corrigeren.",
+            "Verbeterde de systeemschaalbaarheid door implementatie van strikte TypeScript-veiligheid en efficiënte batch-database-loaders."
           ]
         },
         {
           id: 'ludodidactas',
+          visible: true,
           title: "Ludodidactas",
-          subtitle: "Edutainment Platform",
+          subtitle: "Educatief Ecosysteem",
           category: "ONDERWIJS",
-          technologies: ["React", "Node.js", "Express.js", "Unity", "MySQL", "Tailwind CSS", "JavaScript", "REST API's", "Git", "Vite", "JWT", "Game Development", "Softwarearchitectuur", "Teamwerk"],
+          technologies: ["Node.js", "React", "Unity", "MySQL", "Gedistribueerde Systemen"],
           date: "mrt. – nov. 2025",
           link: "https://github.com/leo01102/ludodidactas",
           github: "https://github.com/leo01102/ludodidactas",
-          description: "Uitgebreid educatief platform dat Unity-games combineert met een academisch tracking-dashboard.",
+          description: "Schaalbaar platform dat Unity WebGL-games koppelt aan een React academisch dashboard.",
           details: [
-            "De core full-stack architectuur ontworpen en het grootste deel van de codebase geïmplementeerd als technisch leider van het project",
-            "Een schaalbare RESTful API opgezet met Node.js/Express.js, inclusief veilige JWT-authenticatie, real-time datasynchronisatie en analytics voor docenten",
-            "Een high-performance dashboard gebouwd met React, Vite en Tailwind CSS, met integratie van Recharts voor datavisualisatie",
-            "Unity WebGL-games naadloos geïntegreerd in de React-applicatie, waarbij een bi-directionele brug werd opgezet voor real-time voortgangsmonitoring",
-            "Een geoptimaliseerd MySQL-schema ontworpen om complexe relaties tussen studenten, docenten en game-metrieken efficiënt te beheren",
-            "Samengewerkt in teamverband via een hybride agile methodologie (Scrum/XP) en Git, waarbij strikte codekwaliteit en continue oplevering van features werden gewaarborgd"
+            "Architectuur ontworpen voor een schaalbaar gedistribueerd systeem dat Unity WebGL en React integreert, met real-time telemetrie-inname in MySQL.",
+            "Ontwikkelde een geautomatiseerde analyse-engine die ruwe game-metrics omzet in strategische educatieve inzichten via SQL-aggregaties.",
+            "Versterkte de beveiligingsinfrastructuur met een gelaagd Repository-patroon, JWT-authenticatie en Bcrypt-hashing.",
+            "Stroomlijnde frontend-statebeheer met TanStack Query, wat latentie voor volumesrijke queries verminderde."
           ]
         },
         {
           id: 'edulytics',
+          visible: true,
           title: "Edulytics",
-          subtitle: "Geautomatiseerde Feedback Analyse",
+          subtitle: "Geautomatiseerde Insight Engine",
           category: "PROTOTYPE",
-          technologies: ["OpenAI API", "Python", "Google Cloud Platform (GCP)", "Pandas", "NumPy", "Teamwerk", "Leiderschap"],
+          technologies: ["Python", "LLMs (OpenAI / Groq)", "GCP", "Pandas", "NLP"],
           date: "okt. – nov. 2024",
           link: "https://github.com/leo01102/edulytics",
           github: "https://github.com/leo01102/edulytics",
-          description: "Geautomatiseerd systeem voor analyse van studentenfeedback met behulp van NLP en OpenAI.",
+          description: "Geautomatiseerd feedback-analysesysteem met NLP voor studentenbehoudstrategieën.",
           details: [
-            "Leiding gegeven aan de ontwikkeling van een feedback-prototype, de architectuur gedefinieerd en het gebruik van Google Cloud beheerd",
-            "NLP geïmplementeerd met de OpenAI API (ChatGPT) om de analyse van feedback van studenten te automatiseren",
-            "Een prototype systeem ontworpen om feedback te verzamelen, verwerken en analyseren, met actiegerichte inzichten als resultaat",
-            "Python, Pandas en NumPy gebruikt voor dataverwerking en API-integratie, en Google Cloud voor schaalbare deployment",
-            "Versiebeheer van het team beheerd met Git om de organisatie van de code te waarborgen"
+            "Orkestreerde een geautomatiseerde data-intelligentie pipeline met Python/GCP om feedback in te nemen en interventiestrategieën te verzenden.",
+            "Ontwierp een hybride NLP-systeem dat Pandas-heuristieken combineert met GPT-4o voor kwalitatieve sentimentanalyse.",
+            "Ontwikkelde een robuuste statistische module met NumPy om academische belasting te correleren met welzijnsmetrieken."
           ]
         },
         {
           id: 'librarium',
+          visible: false,
           title: "Librarium",
           subtitle: "Inventaris Systeem",
           category: "DESKTOP",
-          technologies: ["Visual Basic .NET (VB.NET)", "MySQL", "Git", "Visual Studio", "Teamwerk", "Leiderschap"],
+          technologies: ["Visual Basic .NET", "MySQL", "Git"],
           date: "jul. – okt. 2024",
           link: "https://github.com/leo01102/librarium",
           github: "https://github.com/leo01102/librarium",
-          description: "Integraal systeem voor voorraadbeheer en kassasysteem met beveiligde authenticatie.",
+          description: "Integraal systeem voor voorraadbeheer.",
           details: [
             "Leiding gegeven aan de ontwikkeling van een integraal systeem voor voorraadbeheer en kassasysteem met beveiligde authenticatie en exporteerbare rapportages",
             "Een moderne gebruikersinterface (UI) ontworpen door implementatie van een eigen bibliotheek met aangepaste controls verspreid via NuGet",
@@ -660,14 +695,15 @@ export const resumeData = {
         },
         {
           id: 'bookstore',
+          visible: false,
           title: "Boekwinkel Inventaris Systeem",
           subtitle: "Web",
           category: "WEB",
-          technologies: ["React", "Vite", "Express.js", "MySQL"],
+          technologies: ["React", "Express.js", "MySQL"],
           date: "okt. – nov. 2024",
           link: "#",
           github: null,
-          description: "Full-stack webapplicatie voor voorraadbeheer van een boekwinkel.",
+          description: "Full-stack webapplicatie voor voorraadbeheer.",
           details: [
             "Een full-stack webapplicatie ontwikkeld voor voorraadbeheer van een boekwinkel met React, Node.js en Express.js",
             "Een RESTful API geïmplementeerd voor efficiënte communicatie tussen frontend en backend",
@@ -678,14 +714,15 @@ export const resumeData = {
         },
         {
           id: 'classic-ml',
+          visible: false,
           title: "Classic ML",
-          subtitle: "Machine Learning Algoritmen",
+          subtitle: "ML Algoritmen",
           category: "ONDERWIJS",
-          technologies: ["Machine Learning", "Algoritme-implementatie", "Python", "Data-analyse", "Datavisualisatie", "Teamwerk", "Leiderschap"],
+          technologies: ["Python", "Machine Learning"],
           date: "mei – jun. 2025",
           link: "https://github.com/leo01102/classic-ml",
           github: "https://github.com/leo01102/classic-ml",
-          description: "Implementatie vanaf nul van klassieke ML-algoritmen (K-means, regressie, perceptron).",
+          description: "Implementatie van ML-algoritmen vanaf nul.",
           details: [
             "K-means, lineaire regressie en perceptron algoritmen vanaf nul (“from scratch”) geïmplementeerd in Python",
             "Interactieve CLI-tools gebouwd voor data-invoer, real-time voorspellingen en visualisatie van resultaten",
@@ -695,14 +732,15 @@ export const resumeData = {
         },
         {
           id: 'tecnoplus',
+          visible: false,
           title: "TecnoPlus",
           subtitle: "E-commerce",
           category: "WEB",
-          technologies: ["WordPress Development", "WooCommerce", "Betaalgateways", "Responsief Webdesign", "Elementor", "Teamwerk", "Leiderschap"],
+          technologies: ["WordPress", "WooCommerce"],
           date: "mei – jun. 2025",
           link: "#",
           github: null,
-          description: "E-commerce site met betalingsintegratie en massaal productbeheer.",
+          description: "E-commerce site met betalingsintegratie.",
           details: [
             "De technische ontwikkeling van een e-commerce site geleid, inclusief de coördinatie van WooCommerce-aanpassingen en CSS-implementatie",
             "Mercado Pago betaalgateway (testmodus) geïntegreerd en het beheer van producten en categorieën geautomatiseerd via massa-import (CSV)",
@@ -720,7 +758,7 @@ export const resumeData = {
           event: "XXIII Informatica-bijeenkomst van La Rioja (EILAR)",
           role: "Spreker",
           date: "okt. 2025",
-          description: "Presentatie van het prototype “Lumen – Multimodale Empatische AI-Assistent”, over onderwerpen als affective computing en conversationele kunstmatige intelligentie.",
+          description: "Presentatie van “Lumen – Multimodale Empathische AI-assistent”, waarbij de architectuur van affective computing-systemen en de toekomst van conversationele AI werden besproken.",
           certificate: "https://www.linkedin.com/in/leonardo-rearte/details/certifications/1762355017963/single-media-viewer/",
           certificateLabel: "Bekijk Certificaat"
         }
@@ -731,8 +769,6 @@ export const resumeData = {
       description: "Vertel me kort wie je bent en welk probleem je wilt oplossen.",
       cta: "Stuur e-mail",
       socialsTitle: "SOCIALS",
-      nextStepTitle: "VOLGENDE STAP",
-      nextStepDescription: "Stuur me een e-mail en ik neem zo snel mogelijk contact met je op.",
       rights: "Alle rechten voorbehouden."
     }
   }

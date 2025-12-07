@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
         </div>
 
         <div ref={parent as React.Ref<HTMLDivElement>} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {t.projects.items.map((project) => (
+          {t.projects.items.filter(project => project.visible).map((project) => (
             <div
               key={project.id}
               onClick={() => toggleExpand(project.id)}
